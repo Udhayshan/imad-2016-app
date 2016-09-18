@@ -2,14 +2,33 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 
-var articleOne = {
+var articles = {
+    
+ articleOne : {
   title:'Article One | Udhay Shankar',
   heading: 'Article One',
   date: 'Sep 18, 2016',
-content: `<p>
+  content: `<p>
             This is the content for my first Article
         </p>`
-            };
+            },
+ articleTwo : {
+     title:'Article Two | Udhay Shankar',
+  heading: 'Article Two',
+  date: 'Sep 25, 2016',
+  content: `<p>
+            This is the content for my second Article
+        </p>`
+ },
+ articleThree : {
+     title:'Article Three | Udhay Shankar',
+  heading: 'Article Three',
+  date: 'Sep 25, 2016',
+  content: `<p>
+            This is the content for my third Article
+        </p>`
+ }
+};
 
 function createTemplate(data){
 var title = data.title;
