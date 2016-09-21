@@ -5,7 +5,7 @@ element.innerHTML = 'JavaScript Rocks';
 
 var img = document.getElementById('monster');
 
-img.onclick = function()
+img.onClick = function()
 {
     img.style.marginleft = '80px';
 }
